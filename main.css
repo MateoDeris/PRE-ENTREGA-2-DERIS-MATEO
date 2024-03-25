@@ -1,0 +1,274 @@
+.producto img {
+    width: 200px;
+    height: auto; 
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+nav ul li {
+    display: inline-block;
+     
+}
+
+nav ul li a:hover{
+    
+background-color: #130e0e;
+ 
+font-size: 110%;
+}
+
+    
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+
+main {
+    padding: 20px;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    width: 200px;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #ccc;
+    text-align: center;
+}
+/* Estilo para el logo */
+.logo{
+    margin-left: auto;
+}
+
+.logo img {
+    width: 35px; 
+    height: auto;
+}
+
+/* Estilo para el nombre dentro del navbar */
+.brand {
+    font-weight: bold;
+    font-size: 1.2em; 
+    color: #fff; 
+    margin-right: auto;
+
+}
+
+
+/* Estilo para el navbar */
+nav {
+    background-color: #76885B;
+    color: #627254;
+    padding: 10px;
+    display: flex;
+    align-items ;; /
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;}
+
+    /* Media queryy */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* apartado de ubicacion (quiero agregar un boton contacto y darle estilo para que quede lindo*/
+.boton-de-chat{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+    h2{
+        text-align: center;
+        margin-top: 20px; 
+        
+        font-size: 24px; 
+        color: #76885B; /* usar el verde de mi navbar*/
+}
+
+.chat-link {
+    background-color: #007bff;
+    color: #fff; 
+    padding: 10px 20px; 
+    border-radius: 20px; 
+    text-decoration: none;
+    display: block;
+}
+
+.chat-link:hover {
+    background-color: #0056b3; 
+}
+
+/* mapa de ubicacion*/
+#map-container {
+    width: 80%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+/* Estilos base para el mapa */
+#map {
+    width: 100%; 
+    height: 400px; 
+}
+/* Media query! */
+@media screen and (max-width: 768px)
+ {
+    #map-container {
+        height: 300px;
+    }
+}
+
+/* css servicio tecnico*/
+/* Estilos para el contenedor del formulario */
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para los campos del formulario */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.grid-container label {
+    font-weight: bold;
+}
+
+.grid-container input,
+.grid-container textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.grid-container button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para el formulario desplegable */
+#formulario {
+    display: none;
+}
+
+#mostrarFormulario:checked + label + #formulario {
+    display: block;
+}
+
+
+
+/* apartado de contactos boostrap !!*/
+
+
+
+
+
+/*Apartado de Garantia - FINAL */
+footer {
+    background-color: #76885B;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+#formulario-garantia {
+    background-color: #E4E4D0;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+#formulario-garantia .form-group {
+    margin-bottom: 15px;
+}
+
+#formulario-garantia button[type="submit"] {
+    background-color: #76885B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mas-informacion .btn {
+    background-color: #94A684;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+#formulario-garantia form {
+    display: flex;
+    flex-direction: column;
+}
+
+#formulario-garantia button[type="submit"] {
+    align-self: center;
+}
+
+#mas-informacion {
+    text-align: center;
+}
+
+footer {
+    background-color: #cccccc;
+    height: 50px;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    margin-top: auto;
+}
+
