@@ -47,18 +47,18 @@ main {
 }
 
 .productos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
 }
 
 .producto {
-    width: 200px;
-    margin: 10px;
-    padding: 10px;
-    border: 2px solid #ccc;
     text-align: center;
+    padding: 20px;
+    border: 2px solid black;
 }
+
 /* Estilo para el logo */
 .logo{
     margin-left: auto;
@@ -127,7 +127,7 @@ nav ul li a {
 }
 
 .chat-link {
-    background-color: #007bff;
+    background-color: #33ff00;
     color: #fff; 
     padding: 10px 20px; 
     border-radius: 20px; 
@@ -264,11 +264,12 @@ footer {
 }
 
 footer {
-    background-color: #cccccc;
-    height: 50px;
-    text-align: center;
-    position: relative;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    margin-top: auto;
+    background-color: #333;
+    color: white; 
+    padding: 10px 0; 
+    text-align: center; 
 }
 
