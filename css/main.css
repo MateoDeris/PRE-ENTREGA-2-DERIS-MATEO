@@ -1,3 +1,11 @@
+/* Estilo para el h1 */
+h1 {
+
+    font-family: 'Verdana', sans-serif;
+    font-size: 20px; /
+    color: #78A083; 
+    margin-top: 10px; 
+}
 .producto img {
     width: 200px;
     height: auto; 
@@ -12,7 +20,7 @@ header {
     color: #fff;
     padding: 10px;
 }
-
+/* nav ul */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -21,7 +29,7 @@ nav ul {
     justify-content: space-around;
     
 }
-
+/* nav ul li*/
 nav ul li {
     display: inline-block;
      
@@ -34,7 +42,7 @@ background-color: #130e0e;
 font-size: 110%;
 }
 
-    
+    /* nav ul li a*/
 nav ul li a {
     color: #fff;
     text-decoration: none;
@@ -45,6 +53,7 @@ nav ul li a {
 main {
     padding: 20px;
 }
+/* productos */
 
 .productos {
     display: grid;
@@ -52,11 +61,13 @@ main {
     gap: 20px;
     padding: 20px;
 }
+/* producto*/
 
 .producto {
     text-align: center;
     padding: 20px;
     border: 2px solid black;
+    margin-bottom: 20px;
 }
 
 /* Estilo para el logo */
@@ -78,22 +89,24 @@ main {
 
 }
 
-
 /* Estilo para el navbar */
 nav {
     background-color: #76885B;
     color: #627254;
     padding: 10px;
     display: flex;
-    align-items ;; /
-}
+    align-items;
+    font-family: "Bebas Neue", sans-serif;
 
+}
+/* nav ul 2*/
 nav ul{
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-    margin-left: auto;}
+    margin-left: auto;
+    font-family: "Bebas Neue", sans-serif;}
 
     /* Media queryy */
 @media screen and (max-width: 768px) {
@@ -102,14 +115,16 @@ nav ul{
         align-items: center; 
     }
 }
-
+/* nav ul li 2*/
 nav ul li {
     margin-left: 20px;
+    font-family: "Bebas Neue", sans-serif;
 }
-
+/* nav ul li a 2*/
 nav ul li a {
     color: #ffffff;
     text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
 }
 
 /* apartado de ubicacion (quiero agregar un boton contacto y darle estilo para que quede lindo*/
@@ -204,14 +219,6 @@ nav ul li a {
 #mostrarFormulario:checked + label + #formulario {
     display: block;
 }
-
-
-
-/* apartado de contactos boostrap !!*/
-
-
-
-
 
 /*Apartado de Garantia - FINAL */
 footer {

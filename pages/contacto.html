@@ -4,46 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="../main.css">
+    <link rel="stylesheet" href="../css/main.css">
     <link rel="icon" href="../img/favicon.ico" type="image/png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Venta de iPhones y accesorios en Coder Apple. Encuentra los últimos modelos de iPhones y servicios técnicos.">
+    <meta name="keywords" content="Venta de iPhones, iPhones, Apple, tienda de celulares, celulares, tecnología, gadgets, comprar iPhone, comprar teléfono celular, accesorios para iPhone, servicio técnico, garantía">
+    <meta name="author" content="Mateo Deris">
+    <style>
+       
+        .body-contacto {
+            background-color: #f2f2f2; 
+        }
+        h1 {
+            margin-top: 20px; 
+            padding-left: 10px; 
+        }
+        footer {
+            background-color: #333; 
+            color: #fff; 
+            padding: 20px 0; 
+            text-align: center; 
+        }
+    </style>
 </head>
-    
 <body class="body-contacto">
     <header>
         <div class="logo">
             <img src="../img/logotipo-de-apple.png" alt="Logo de Coder Apple">
         </div>
+        <nav>
+            <ul>
+                <li><span class="brand">Coder Apple</span></li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+                <li><a href="./serviciotecnico.html">Servicio Técnico</a></li>
+                <li><a href="./ubicacion.html">Ubicación</a></li>
+                <li><a href="./garantia.html">Garantía</a></li>
+            </ul>
+        </nav>
+    </header>
+
     
-            <nav>
-                <ul>
-                    <li><span class="brand">Coder Apple</span></li>
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="./contacto.html">Contacto</a></li>
-                    <li><a href="./serviciotecnico.html">Servicio Técnico</a></li>
-                    <li><a href="./ubicacion.html"">Ubicación</a></li>
-                    <li><a href="./garantia.html">Garantía</a></li>
-                </ul>
-            </nav>
-        </header>
+    <h1><span class="icon">&#9742;</span> Contacto</h1>
+
     <form class="p-4">
         <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label fw-bold">Nombre</label>
-                <input class="form-control" type="text" placeholder="Ingrese su nombre" aria-label="default input example">
-    </div>
-    <div class="mb-3">
-        <label for="exampleFormControlInput1" class="form-label fw-bold">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-      </div>
-      <div class="mb-3">
-        <label for="exampleFormControlTextarea1" class="form-label fw-bold">Example textarea</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary fw-bold">Enviar</button>
-
+            <label for="exampleFormControlInput1" class="form-label fw-bold">Nombre</label>
+            <input class="form-control" type="text" placeholder="Ingrese su nombre" aria-label="default input example">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label fw-bold">Correo Electrónico</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label fw-bold">Mensaje</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary fw-bold">Enviar</button>
     </form>
-    
 
     <section id="preguntas-frecuentes">
         <h2>Preguntas Frecuentes</h2>
@@ -52,7 +71,6 @@
             <li><strong>2. </strong>¿Cuál es el proceso de devolución de productos?</li> 
             <li><strong>3. </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
             <li><strong>4. </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
-           
         </ul>
     </section>
 
@@ -62,6 +80,10 @@
     </section>
 
     <a href="https://support.apple.com/es-lamr/contact" class="saber-mas">Saber más</a>
+
+    <footer>
+        <p>&copy; 2024 Coder Apple Todos los derechos reservados Mateo Deris</p>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
