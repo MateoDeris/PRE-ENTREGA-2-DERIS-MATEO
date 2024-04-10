@@ -1,0 +1,88 @@
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+/* nav ul */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    
+}
+/* nav ul li*/
+nav ul li {
+    display: inline-block;
+     
+}
+
+nav ul li a:hover{
+    
+background-color: #130e0e;
+ 
+font-size: 110%;
+}
+
+    /* nav ul li a*/
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+.logo{
+    margin-left: auto;
+}
+
+.logo img {
+    width: 35px; 
+    height: auto;
+}
+
+
+.brand {
+    font-weight: bold;
+    font-size: 1.2em; 
+    color: #fff; 
+    margin-right: auto;
+
+}
+
+/* Estilo para el navbar */
+nav {
+    background-color: #76885B;
+    color: #627254;
+    padding: 10px;
+    display: flex;
+    //*align-items;
+    font-family: "Bebas Neue", sans-serif;
+
+}
+/* nav ul 2*/
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+    font-family: "Bebas Neue", sans-serif;}
+
+    /* Media queryy */
+@media screen and (max-width: 768px) {
+    nav ul {
+        flex-direction: column; 
+        align-items: center; 
+    }
+}
+/* nav ul li 2*/
+nav ul li {
+    margin-left: 20px;
+    font-family: "Bebas Neue", sans-serif;
+}
+/* nav ul li a 2*/
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+}
