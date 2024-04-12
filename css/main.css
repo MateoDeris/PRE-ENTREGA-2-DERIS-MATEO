@@ -108,13 +108,7 @@ nav ul{
     margin-left: auto;
     font-family: "Bebas Neue", sans-serif;}
 
-    /* Media queryy */
-@media screen and (max-width: 768px) {
-    nav ul {
-        flex-direction: column; 
-        align-items: center; 
-    }
-}
+
 /* nav ul li 2*/
 nav ul li {
     margin-left: 20px;
@@ -166,13 +160,7 @@ nav ul li a {
     width: 100%; 
     height: 400px; 
 }
-/* Media query! */
-@media screen and (max-width: 768px)
- {
-    #map-container {
-        height: 300px;
-    }
-}
+
 
 /* css servicio tecnico*/
 
@@ -280,3 +268,15 @@ footer {
     text-align: center; 
 }
 
+    /* Media queryy */
+    @media screen and (max-width: 768px) {
+        nav ul {
+            flex-direction: column; 
+            align-items: center; 
+        }
+        #map-container {
+            height: 300px;
+        }
+    }    
+
+    

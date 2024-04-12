@@ -1,4 +1,255 @@
-@import "base/reset";
-@import "layout/header";
-@import "layout/footer";
-@import "pages/home";
+/*variables colores*/
+$verde-h1: #78a083;
+$verde-h2: #76885b;
+$gris-header: #333;
+$verde-nav-texto: #627254;
+$negro-nav-hover: #130e0e;
+$blanco: #fff;
+$chat-link: #33ff00;
+$chat-background: #0056b3;
+$grid-button: #007bff;
+$mas-info: #94a684;
+$negro: #000000;
+
+/*variables tipografía*/
+$bebas-neue: "Bebas Neue", sans-serif;
+$verdana: "Verdana", sans-serif;
+
+//*mixin /
+
+@mixin boton {
+  color: $blanco;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+    /*globales*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $bebas-neue;
+    }
+    
+    h1 {
+      font-family: $verdana;
+      color: $verde-h1;
+      font-size: 20px;
+      margin-top: 10px;
+    }
+    
+    h2 {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 24px;
+      color: $verde-h2;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    a {
+      text-decoration: none;
+      color: $blanco;
+    }
+    
+    //* logo /
+    .logo {
+      margin-left: auto;
+    
+      img {
+        width: 35px;
+        height: auto;
+      }
+    }
+    
+    //* navbar /
+    
+    nav {
+      background-color: $verde-h2;
+      color: $verde-nav-texto;
+      padding: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    
+      ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+    
+        li {
+          margin-left: 20px;
+    
+          a {
+            color: $blanco;
+            transition: all 0.3ms ease;
+    
+            :hover {
+              background-color: $negro;
+              font-size: 24px;
+            }
+          }
+        }
+      }
+    }
+    
+    .brand {
+      font-weight: bold;
+      font-size: 24px; 
+      color: $blanco;
+      margin-right: auto;
+
+    }
+    
+    /*producto*/
+
+    .productos {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 20px;
+    
+      .producto {
+        text-align: center;
+        padding: 20px;
+        border: 2px solid black;
+        margin-bottom: 20px;
+    
+        img {
+          width: 200px;
+          height: auto;
+        }
+      }
+    }
+    
+    /*contacto*/
+    .boton-de-chat {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+    
+    .chat-link {
+      @include boton;
+      border-radius: 20px;
+      background-color: $chat-link;
+      display: block;
+    
+      :hover {
+        background-color: $chat-background;
+      }
+    }
+    
+    #map {
+      width: 100%;
+      height: 400px;
+    }
+    
+    #map-container {
+      width: 80%;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    
+    /*servicio técnico*/
+    
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    
+      label {
+        font-weight: bold;
+      }
+    
+      input, textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    
+      button {
+        @include boton;
+        background-color: $grid-button;
+        border: none;
+      }
+    }
+    
+    /*garantía*/
+    
+    #formulario {
+      display: none;
+    }
+    
+    #mostrarFormulario:checked + label + #formulario {
+      display: block;
+    }
+    
+   
+#formulario-garantia {
+  background-color: #e4e4d0;
+  padding: 20px;
+  border: 2px solid $negro;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  button {
+    @include boton;
+    background-color: $verde-h2;
+    border: none;
+    align-self: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+#mas-informacion {
+  text-align: center;
+
+  p {
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+
+  .btn {
+    @include boton;
+    background-color: $mas-info;
+  }
+}
+    
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color:$gris-header;
+      color: $blanco;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    @media screen and (max-width: 768px) {
+        nav ul {
+            flex-direction: column; 
+            align-items: center; 
+        }
+        #map-container {
+            height: 300px;
+        }
+    }    
