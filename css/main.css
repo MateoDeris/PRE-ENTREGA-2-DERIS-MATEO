@@ -1,244 +1,140 @@
-@charset "UTF-8";
+/* Reset CSS */
 * {
   margin: 0;
-  padding: 0%;
+  padding: 0;
   box-sizing: border-box;
 }
 
+/* Fuentes */
 @font-face {
   font-family: Bebas Neue;
   src: url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
 }
-@media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-  #map-container {
-    height: 300px;
-  }
-  #map-container .contenedor {
-    width: 100%;
-  }
-}
-/* Estilo para el h1 */
-h1 {
-  font-family: "Verdana", sans-serif; /* Cambiar la fuente del título */
-  font-size: 20px; /* Tamaño de la fuente reducido */
-  color: #78A083; /* Color del texto que combina con el estilo */
-  margin-top: 10px; /* Espacio entre el navbar y el título */
-}
 
-.producto img {
-  width: 200px;
-  height: auto;
-}
-
+/* Estilos Generales */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+background-size: cover;
+background-position: center;
+background-image: url(../img/fondo\ pagina\,.png)
 }
+  
 
+
+/* Header */
 header {
   background-color: #333;
   color: #fff;
   padding: 10px;
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+
+
+/* Estilos para el navbar */
+nav {
+  background-color: #76885B;
+  color: #627254;
+  padding: 10px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; 
+  align-items: center; 
+  font-family: "Bebas Neue", sans-serif;
 }
 
-nav ul li {
-  display: inline-block;
-}
-
-nav ul li a:hover {
-  background-color: #130e0e;
-  font-size: 110%;
-}
-
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  transition: 0.3s ease;
-}
-
-main {
-  padding: 20px;
-}
-
-.productos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 20px;
-}
-
-.producto {
-  text-align: center;
-  padding: 20px;
-  border: 2px solid black;
-  margin-bottom: 20px;
-}
-
-/* Estilo para el logo */
-.logo {
-  margin-left: auto;
-}
 
 .logo img {
   width: 35px;
   height: auto;
 }
 
-/* Estilo para el nombre dentro del navbar */
 .brand {
   font-weight: bold;
   font-size: 1.2em;
   color: #fff;
-  margin-right: auto;
 }
 
-/* Estilo para el navbar */
-nav {
-  background-color: #76885B;
-  color: #627254;
-  padding: 10px;
+.menu {
   display: flex;
-  font-family: "Bebas Neue", sans-serif;
+  list-style: none;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+
+/* Main Content */
+main {
+  padding: 20px;
+}
+
+
+/* Productos */
+.productos {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  padding: 1px; 
+}
+
+.producto {
+  flex-basis: calc(25% - 2px); 
+  text-align: center;
+  padding: 1px;
+  border: 2px solid rgb(46, 46, 46);
+  margin-bottom: 1px; 
+}
+
+.producto img {
+  width: 65%;  /*mi mejor opcion fue en 65 */
+  height: auto;
 }
 
 nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  margin-left: auto;
-  font-family: "Bebas Neue", sans-serif;
+  margin-top: 10px;
 }
 
-/* Media queryy */
-@media screen and (max-width: 768px) {
-  nav ul {
-    flex-direction: column;
-    align-items: center;
-  }
-}
 nav ul li {
-  margin-left: 20px;
-  font-family: "Bebas Neue", sans-serif;
+  margin: 10px 0;
 }
 
-nav ul li a {
-  color: #ffffff;
-  text-decoration: none;
-  font-family: "Bebas Neue", sans-serif;
-}
 
-/* apartado de ubicacion (quiero agregar un boton contacto y darle estilo para que quede lindo*/
-.boton-de-chat {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-}
-
-h2 {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 24px;
-  color: #76885B; /* usar el verde de mi navbar*/
-}
-
-.chat-link {
-  background-color: #33ff00;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 20px;
-  text-decoration: none;
-  display: block;
-}
-
-.chat-link:hover {
-  background-color: #0056b3;
-}
-
-/* mapa de ubicacion*/
-#map-container {
-  width: 80%;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-/* Estilos base para el mapa */
-#map {
-  width: 100%;
-  height: 400px;
-}
-
-/* Media query! */
-@media screen and (max-width: 768px) {
-  #map-container {
-    height: 300px;
-  }
-}
-/* css servicio tecnico*/
-/* Estilos para el contenedor del formulario */
-.container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-/* Estilos para los campos del formulario */
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
-.grid-container label {
-  font-weight: bold;
-}
-
-.grid-container input,
-.grid-container textarea {
-  width: 100%;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  box-sizing: border-box;
-}
-
-.grid-container button {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
+/* Estilos para el botón "Comprar" en la sección de productos */
+.producto button {
+  background-color: #A5DD9B; 
+  color: #fff; 
+  padding: 15px 25px; 
   border: none;
-  border-radius: 5px;
+  border-radius: 30px;
   cursor: pointer;
+  transition: background-color 0.3s; 
 }
 
-/* Estilos para el formulario desplegable */
-#formulario {
-  display: none;
+/* Estilos para el cambio de color al pasar el mouse . */
+.producto button:hover {
+  background-color: #03AED2; 
 }
 
-#mostrarFormulario:checked + label + #formulario {
-  display: block;
+
+/*ubicacion*/
+
+#ubicacion {
+  color: white; 
 }
 
-/*Apartado de Garantia - FINAL */
-footer {
-  background-color: #76885B;
-  color: white;
-  text-align: center;
-  padding: 20px;
+#ubicacion h1 {
+  color: white; 
 }
+
+
+/* CSS para el formulario de garantía */
 
 #formulario-garantia {
   background-color: #E4E4D0;
@@ -248,8 +144,9 @@ footer {
   margin-bottom: 20px;
 }
 
-#formulario-garantia .form-group {
-  margin-bottom: 15px;
+#formulario-garantia a.btn,
+#formulario-garantia p {
+  display: block;
 }
 
 #formulario-garantia button[type=submit] {
@@ -282,7 +179,80 @@ footer {
   text-align: center;
 }
 
-footer {
+#mas-informacion {
+  text-align: center;
+}
+
+
+
+/* Seccion servicio tecnico!*/
+
+.service-info {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.service-info p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label[for="mostrarFormulario"] {
+  background-color: #03A9F4;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+label[for="mostrarFormulario"]:hover {
+  background-color: #0288D1;
+}
+
+#formulario {
+  display: none;
+  margin-top: 20px;
+}
+
+/* Estilos para el formulario de servicio técnico */
+.logo img {
+  max-width: 100%; 
+  height: auto; 
+}
+
+@media screen and (min-width: 768px) {
+  .logo img {
+    max-width: 50px;
+
+  }
+}
+
+
+
+@media screen and (max-width: 768px)
+{
+  nav{
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+/* Footer */
+footer{
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -291,5 +261,3 @@ footer {
   padding: 10px 0;
   text-align: center;
 }
-
-/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,27 @@
+nav {
+    background-color: #76885B;
+    color: #627254;
+    padding: 10px;
+    display: flex;
+    font-family: "Bebas Neue", sans-serif;
+  
+  }
+  
+  nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: auto;
+    font-family: "Bebas Neue", sans-serif;}
+  
+  nav ul li {
+    margin-left: 20px;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Bebas Neue", sans-serif;
+  }

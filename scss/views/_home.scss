@@ -49,7 +49,7 @@ nav ul li a {
   color: #fff;
   text-decoration: none;
   transition: 0.3s ease;
-}
+} 
 
 
 main {
@@ -89,17 +89,16 @@ main {
 
 }
 
-/* Estilo para el navbar */
+/* Estilo para el navbar  SOLO HOME,queda en home.*/
 nav {
   background-color: #76885B;
   color: #627254;
   padding: 10px;
   display: flex;
-  // align-items ;
   font-family: "Bebas Neue", sans-serif;
 
 }
-
+/*
 nav ul{
   list-style-type: none;
   margin: 0;
@@ -109,23 +108,25 @@ nav ul{
   font-family: "Bebas Neue", sans-serif;}
 
   /* Media queryy */
+  /*
 @media screen and (max-width: 768px) {
   nav ul {
       flex-direction: column; 
       align-items: center; 
   }
 }
-
+/*
 nav ul li {
   margin-left: 20px;
   font-family: "Bebas Neue", sans-serif;
 }
-
+/*
 nav ul li a {
   color: #ffffff;
   text-decoration: none;
   font-family: "Bebas Neue", sans-serif;
 }
+ 
 
 /* apartado de ubicacion (quiero agregar un boton contacto y darle estilo para que quede lindo*/
 .boton-de-chat{
@@ -154,7 +155,8 @@ nav ul li a {
   background-color: #0056b3; 
 }
 
-/* mapa de ubicacion*/
+/* mapa de ubicacion*/ 
+/*
 #map-container {
   width: 80%; 
   max-width: 800px; 
@@ -162,6 +164,7 @@ nav ul li a {
 }
 
 /* Estilos base para el mapa */
+/*
 #map {
   width: 100%; 
   height: 400px; 
@@ -220,13 +223,7 @@ nav ul li a {
   display: block;
 }
 
-/*Apartado de Garantia - FINAL */
-footer {
-  background-color: #76885B;
-  color: white;
-  text-align: center;
-  padding: 20px;
-}
+
 
 #formulario-garantia {
   background-color: #E4E4D0;
